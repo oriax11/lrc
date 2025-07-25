@@ -130,11 +130,7 @@ class YouTubeLyricsSync {
             }
         });
 
-        pauseBtn.addEventListener('click', () => {
-            if (this.player && this.playerReady) {
-                this.player.pauseVideo();
-            }
-        });
+
     }
 
     startSyncLoop() {
