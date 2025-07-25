@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Lyrics Sync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Habib salem - TAL3ARBAT N TALB -</h2>
+            <p>tifinagh lyrics</p>
+        </header>
+
+        <main class="content">
+            <div class="video-section">
+                <div class="video-container">
+                    <div id="youtube-player"></div>
+                </div>
+                <div class="controls">
+                    <button id="play-btn" class="control-btn">
+                        <span class="play-icon">▶</span>
+                        <span class="pause-icon" style="display: none;">⏸</span>
+                        <span class="btn-text">Play</span>
+                    </button>
+                    <button id="pause-btn" class="control-btn">
+                        <span>⏸</span>
+                        Pause
+                    </button>
+                    <div class="time-display">
+                        <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lyrics-section">
+                <div class="lyrics-header">
+                    <h2>Lyrics</h2>
+                </div>
+                <div class="lyrics-container" id="lyrics-container">
+                    <div class="lyrics-loading">Loading lyrics...</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
